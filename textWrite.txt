@@ -1,0 +1,2 @@
+Il y a 3 le mot Java dans le dossier 
+ Et 46 mot contenant l'occurence Java dans le dossier
