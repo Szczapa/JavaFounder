@@ -13,8 +13,6 @@ public class IOApp {
         try(BufferedReader reader = new BufferedReader(new FileReader(ReadPath))){
             String line;
             while ((line = reader.readLine()) != null) {
-                System.out.println(line);
-
                 if(line.contains("Java")){
                     javaLineCounter++;
                 }
@@ -28,8 +26,8 @@ public class IOApp {
 
         if (javaWordCounter > 0 ) {
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(writePath))){
-                writer.write("Il y a " + javaWordCounter+ " le mot Java dans le dossier\n");
-                writer.write("Et " + javaLineCounter + " mot contenant l'occurence Java dans le dossier");
+                writer.write("Il y a " + javaWordCounter+ " le mot \"Java\" seul dans le dossier\n");
+                writer.write("Et " + javaLineCounter + " mot contenant l'occurence \"Java\" dans le dossier");
             }
         }
     }
